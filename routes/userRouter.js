@@ -3,7 +3,7 @@ const router = express.Router();
 
 // middleware
 const checkToken = require("../middleware/checkToken");
-//
+const controllers = require("../controllers/userController");
 
 router.post("/mail", controllers.sendMail);
 router.post("/", controllers.signup);
