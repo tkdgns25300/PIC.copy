@@ -12,15 +12,15 @@ const PORT = process.env.PORT || 80;
 // set .env file
 if (process.env.NODE_ENV === "development") {
 	dotenv.config({
-		path: path.join(__dirname, "../.env.development"),
+		path: path.join(__dirname, "./.env.development"),
 	});
 } else if (process.env.NODE_ENV === "beta") {
 	dotenv.config({
-		path: path.join(__dirname, "../.env.beta"),
+		path: path.join(__dirname, "./.env.beta"),
 	});
 } else if (process.env.NODE_ENV === "production") {
 	dotenv.config({
-		path: path.join(__dirname, "../.env.production"),
+		path: path.join(__dirname, "./.env.production"),
 	});
 }
 

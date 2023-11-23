@@ -1,2 +1,4 @@
-.env
+.env.development
+.env.beta
+.env.prodction
 /node_modules
